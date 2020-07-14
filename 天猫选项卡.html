@@ -83,14 +83,7 @@
        if (index>=titleItems.length) {
          index = 0;
        }
-       for (let i = 0; i < titleItems.length; i++) {
-         titleItems[i].style.backgroundColor = "#fff";
-         titleItems[i].style.color = "#a3a3a3";
-         conItems[i].style.display = 'none'
-       }
-       titleItems[index].style.backgroundColor = "#00B262";
-       titleItems[index].style.color = "#fff";
-       conItems[index].style.display = 'block'
+      change(index)
        // console.log(index);
      }, 2000)
    }
